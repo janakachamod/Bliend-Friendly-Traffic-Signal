@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "562873596540",
+    "firebase_url": "https://blindfriendlytrafficsignal-default-rtdb.firebaseio.com",
+    "project_id": "blindfriendlytrafficsignal",
+    "storage_bucket": "blindfriendlytrafficsignal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562873596540:android:1979c215d31a6c296227f9",
+        "android_client_info": {
+          "package_name": "com.assessment3.iotapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562873596540-s05mk2rvi11ttbsn9taid45lb8usllft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJTxiPda80ekuoK-VLe7qcmzdDtz3ZVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562873596540-s05mk2rvi11ttbsn9taid45lb8usllft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

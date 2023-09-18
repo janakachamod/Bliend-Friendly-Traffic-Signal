@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="48dp"
+        android:text="Blind Friendly Traffic Signal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="104dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="166dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/Redlight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/Yellowlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track1" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/Greenlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/round2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/tcrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:textStyle="bold"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track3" />
+
+            <TextView
+                android:id="@+id/tcrt_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="LEFT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:textStyle="bold"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track3" />
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SIGNAL"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/tcrt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track3" />
+
+            <TextView
+                android:id="@+id/tcrt1_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RIGHT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
